@@ -2,23 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- I couldn't get remote window closing to work so I had to remove the CSP so window.close() would work instead. -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>The Most Basic Game of Pong Ever</title>
   </head>
   <body>
     <div id="title-bar" class="grey lighten-2">
       <div id="title" class="window-button">
-        <a class="breadcrumb">The Most Basic Game of Pong Ever</a>
+        <a class="breadcrumb">Stats & Help</a>
       </div>
       <div id="title-bar-btns">
-        <button id="close-btn" class="window-button waves-effect btn-flat grey lighten-2" onclick="window.close()"><i class="material-icons">Close</i></button>
+        <button id="close-btn" class="window-button waves-effect waves-red btn-flat grey lighten-2" onclick="window.close()"><i class="material-icons">Close</i></button>
       </div>
     </div>
 
     <link rel="stylesheet" href="style.css">
     <h4>Player B is at the top, Player A is at the bottom</h4>
     <h4>Control Player A with A [left] and D [right], control Player B with left and right arrows</h4>
-    <script src="pong.js"></script>
   </body>
 </html>

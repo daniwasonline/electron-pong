@@ -32,7 +32,7 @@ function createWindow () {
   })
 }
 function createGameWindow () {
-  // Create the browser window.
+  // Create 2nd browser window.
   mainWindow = new BrowserWindow({frame:false,
     width: 450,
     height: 728,

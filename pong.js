@@ -52,7 +52,7 @@ class Paddle {
         this.y_speed = 0;
     }
     render() {
-        context.fillStyle = "#0000FF";
+        context.fillStyle = "#FF00FF";
         context.fillRect(this.x, this.y, this.width, this.height);
     }
 }
@@ -102,7 +102,7 @@ var playerb = new PlayerB();
 var ball = new Ball(200, 300);
 
 var render = function() {
-  context.fillStyle = "#FF00FF";
+  context.fillStyle = "#7289DA";
   context.fillRect(0, 0, width, height);
   player.render();
   playerb.render();

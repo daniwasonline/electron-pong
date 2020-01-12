@@ -1,6 +1,6 @@
 {
   "name": "electron-pong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Most basic game of Pong ever, built in electron",
   "main": "main.js",
   "scripts": {

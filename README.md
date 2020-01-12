@@ -1,5 +1,5 @@
 # Pong.. in Electron.
-![CC BY-SA 4.0](https://img.shields.io/github/license/BeanedTaco/electron-pong?style=flat-square) ![Version](https://img.shields.io/github/package-json/v/BeanedTaco/electron-pong?style=flat-square)
+![CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-7289da?style=flat-square) ![Version](https://img.shields.io/github/package-json/v/BeanedTaco/electron-pong?style=flat-square)
 
 This is a pong game that I made for my CS class, and I built it using the Node.js and the Electron framework. This is my first project created with Electron, and it was a fun experience doing it. I created it with no experience in Electron and finished in two 6-hour sessions (I started at almost 8am and ended at 7:30pm, only taking breaks to eat and stretch).
 ## Precautions

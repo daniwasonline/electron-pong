@@ -1,0 +1,22 @@
+{
+  "name": "electron-pong",
+  "version": "1.0.0",
+  "description": "Most basic game of Pong ever, built in electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/beanedtaco/electron-pong",
+  "keywords": [
+    "electron",
+    "javascript",
+    "basic",
+    "pong"
+  ],
+  "author": "SaturdayNightDead",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "custom-electron-titlebar": "^3.2.1"
+  }
+}

@@ -5,10 +5,10 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({frame:false,
-    width: 910,
-    height: 728,
+    width: 800,
+    height: 150,
     minWidth: 910,
-    minHeight: 728,
+    minHeight: 150,
     frame:false,
     resizeable: false,
     show: true,
@@ -31,10 +31,41 @@ function createWindow () {
     mainWindow = null
   })
 }
+function createGameWindow () {
+  // Create the browser window.
+  mainWindow = new BrowserWindow({frame:false,
+    width: 450,
+    height: 728,
+    minWidth: 450,
+    minHeight: 728,
+    frame:false,
+    resizeable: false,
+    show: true,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
+  })
+
+  // and load the index.html of the app.
+  mainWindow.loadFile('index2.html')
+
+  // Open the DevTools.
+  // mainWindow.webContents.openDevTools()
+
+  // Emitted when the window is closed.
+  mainWindow.on('closed', function () {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    app.quit();
+    mainWindow = null
+  })
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
+app.on('ready', createGameWindow)
 app.on('ready', createWindow)
 
 // Quit when all windows are closed.

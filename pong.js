@@ -1,10 +1,11 @@
-// This basically animates things. 60fps.
+// Scoring things
 var scoreA = 0;
 var scoreB = 0;
 var scoretext = document.createElement("h5")
 setInterval(function() {
-scoretext.innerText = `PlayerA: ${scoreA} | PlayerB: ${scoreB}`;
+scoretext.innerText = `PlayerA: ${scoreA} | PlayerB: ${scoreB} (Psst! Press H to open the help box!)`;
 }, 350);
+// This basically animates things. 60fps.
 var animate = window.requestAnimationFrame ||
   window.webkitRequestAnimationFrame ||
   window.mozRequestAnimationFrame ||
@@ -189,6 +190,13 @@ window.addEventListener("keydown", function(event) {
 
 window.addEventListener("keyup", function(event) {
   delete keyStroke[event.keyCode];
+});
+
+window.addEventListener("keydown", function(event) {
+  if(event.keyCode == 72) { // Help key
+    alert(`Player B is at the top, Player A is at the bottom.
+Control Player A with A [left] and D [right], control Player B with left and right arrows.`)
+  }
 });
 
 

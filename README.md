@@ -20,6 +20,4 @@ I had to remove the Content Security Policy so ``window.close()`` would work (be
 - ***Profit!***
 
 ## Credits
-This was originally created using Electron's [Quick Start app](https://github.com/electron/electron-quick-start) as a base.
-
-This is licensed with CC-BY-SA 4.0.
+This was originally created using Electron's [Quick Start app](https://github.com/electron/electron-quick-start) as a base. Made by *yours truly*.

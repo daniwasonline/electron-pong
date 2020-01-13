@@ -2,6 +2,9 @@ h3, h4, h5 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.windowclose:hover {
+background-color: crimson
+}
 
 #title-bar {
     -webkit-app-region: drag;
@@ -10,6 +13,7 @@ h3, h4, h5 {
     margin: 0px;
   }
   
+
   #title {
     position: fixed;
     top: 0px;

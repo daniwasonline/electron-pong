@@ -9,6 +9,8 @@ function createGameWindow () {
     height: 728,
     minWidth: 450,
     minHeight: 728,
+    maxWidth: 450,
+    maxHeight: 728,
     frame:false,
     resizeable: false,
     show: true,
